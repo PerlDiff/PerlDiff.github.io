@@ -262,6 +262,23 @@
 </section>
 -->
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+    <div class="columns is-centered has-text-centered">
+      <img src="./static/images/intro.png" alt="PerlDiff enhances controllability over BEVControl* using geometric priors.f" width="100%" loading="lazy">
+    </div>
+     <h2 class="subtitle has-text-centered">
+      First row: Adjusting BEV 3D annotation yaw changes the vehicle angles in generated 
+       images. Second row: Shifting annotated BEV coordinates moves vehicles forward in the 
+       scene. Third row: Morphing the object into changing vehicle types such as a car, a 
+       truck, and a bus increases the object size.
+      </h2>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -282,11 +299,14 @@
             capacities of predefined network architectures. In this paper, we explore the integration 
             of controlling information and introduce PerlDiff (Perspective-Layout Diffusion Models), 
             a method for effective street view image generation that fully leverages perspective 
-            3D geometric information. Our PerlDiff employs 3D geometric priors to guide the generation 
+            3D geometric information.
+            </p> 
+           <p>            
+            Our PerlDiff employs 3D geometric priors to guide the generation 
             of street view images with precise object-level control within the network learning process, 
             resulting in a more robust and controllable output.  Moreover, it demonstrates superior 
             controllability compared to alternative layout control methods. Empirical results justify 
-            that our PerlDiff markedly enhances the precision of generation on the NuScenes and KITTI datasets. 
+            that our PerlDiff markedly enhances the precision of generation on the NuScenes and KITTI datasets.  
           </p>  
         </div>
       </div>
@@ -298,13 +318,13 @@
       <div class="hero-body">
 
       <div class="columns is-centered has-text-centered">
-        <img src="./static/imagesPerlDiff_overview.png" alt="Algorithm description of
-        PerlDiff" width="90%" loading="lazy">
+        <img src="./static/images/PerlDiff_overview.png" alt="Algorithm description of
+        PerlDiff" width="100%" loading="lazy">
       </div>
        <h2 class="subtitle has-text-centered">
-          <span class="dnerf">PerlDiff</span> utilizes perspective layout masking maps derived from BEV annotations to integrate 
-         scene information and object bounding boxes. <span class="dnerf">Perl-CM</span> is responsible for integrating control information through 
-         employing <span class="dnerf">Perl-based cross-attention (Scene & Object)</span> mechanism, using Perl masking map (road \& box) as geometric 
+        PerlDiff utilizes perspective layout masking maps derived from BEV annotations to integrate 
+         scene information and object bounding boxes. Perl-CM is responsible for integrating control information through 
+         employing Perl-based cross-attention (Scene & Object) mechanism, using Perl masking map (road & box) as geometric 
          priors to guide object-level image generation with high precision. View cross-attention ensures consistency across multiple views, 
          while Text cross-attention integrates textual scene descriptions to facilitate further adjustments.
         </h2>
