@@ -57,28 +57,7 @@
           <i class="fas fa-home"></i>
       </span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
     </div>
-
   </div>
 </nav>
 
@@ -91,29 +70,31 @@
           <h1 class="title is-1 publication-title">PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://nuanbaobao.github.io/">Jinhua Zhang</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Hualian Sheng</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Sijia Cai</a><sup>2</sup>,
+              <a href="https://nuanbaobao.github.io/">Jinhua Zhang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Bing Deng</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=73JaDUQAAAAJ&hl=zh-CN&oi=sra">Hualian Sheng</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Qiao Liang</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=LMVeRVAAAAAJ&hl=zh-CN&oi=sra">Sijia Cai</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Wen Li</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?user=VQp_ye4AAAAJ&hl=zh-CN&oi=sra">Bing Deng</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ying Fu</a><sup>3</sup>
+              <a href="https://scholar.google.com/citations?user=-Hv_dPkAAAAJ&hl=zh-CN">Qiao Liang</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Jieping Ye</a><sup>2</sup>
+              <a href="https://scholar.google.com/citations?user=yjG4Eg4AAAAJ&hl=zh-CN">Wen Li</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Shuhang Gu</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=PE4xMlkAAAAJ&hl=zh-CN">Ying Fu</a><sup>3</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=T9AzhwcAAAAJ&hl=zh-CN">Jieping Ye</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ&hl=zh-CN">Shuhang Gu</a><sup>1</sup>
             </span>            
             
           </div>
@@ -126,17 +107,6 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. 
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2407.06109"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2407.06109"
                    class="external-link button is-normal is-rounded is-dark">
@@ -146,9 +116,8 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/LabShuHangGU/PerlDiff"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -163,6 +132,7 @@
     </div>
   </div>
 </section>
+
 
 
 <section class="hero teaser">
@@ -285,9 +255,6 @@
 </section>
 
 
-
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Visualization of Attention. -->
@@ -313,6 +280,7 @@
   </div>
 </section>
 
+  
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Visualization of NuScenes. -->
@@ -337,7 +305,6 @@
     <!--/ Visualization of NuScenes. -->
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -364,9 +331,29 @@
   </div>
 </section>
 
-  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Downstream Support. -->
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Downstream Support</h2>
 
-
+        <div class="content has-text-justified">
+          <p>
+            Generation from PerlDiff can be used as data augmentation, 
+            supporting various 3D object detection tasks such as BEVFormer and StreamPETR.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column has-text-centered">
+            <img src="./static/images/aug.png" alt="data aug" style="width: 100%;" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Downstream Support. -->
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
