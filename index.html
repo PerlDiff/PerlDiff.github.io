@@ -270,34 +270,42 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Controllable generation is considered a potentially vital approach to address the challenge of annotating 3D data, and the precision of such controllable generation becomes particularly imperative in the context of data production for autonomous driving. Existing methods focus on the integration of diverse generative information into controlling inputs, utilizing frameworks such as GLIGEN or ControlNet, to produce commendable outcomes in controllable generation. 
-%
-However, such approaches intrinsically restrict generation performance to the learning capacities of predefined network architectures.  
-%
-In this paper, we explore the integration of controlling information and introduce PerlDiff (\textbf{Per}spective-\textbf{L}ayout \textbf{Diff}usion Models), a method for effective street view image generation that fully leverages perspective 3D geometric information.
-%
-Our PerlDiff employs 3D geometric priors to guide the generation of street view images with precise object-level control within the network learning process, resulting in a more robust and controllable output. 
-%
-Moreover, it demonstrates superior controllability compared to alternative layout control methods. Empirical results justify that our PerlDiff markedly enhances the precision of generation on the NuScenes and KITTI datasets. Our codes and models are publicly available at {\small \href{https://github.com/LabShuHangGU/PerlDiff}{https://github.com/LabShuHangGU/PerlDiff}}.
-            
-
-          </p>
+            Controllable generation is considered a potentially vital approach to address the challenge
+            of annotating 3D data, and the precision of such controllable generation becomes particularly 
+            imperative in the context of data production for autonomous driving. Existing methods focus 
+            on the integration of diverse generative information into controlling inputs, utilizing 
+            frameworks such as GLIGEN or ControlNet, to produce commendable outcomes in controllable 
+            generation. 
+          </p> 
+          <p>
+            However, such approaches intrinsically restrict generation performance to the learning 
+            capacities of predefined network architectures. In this paper, we explore the integration 
+            of controlling information and introduce PerlDiff (Perspective-Layout Diffusion Models), 
+            a method for effective street view image generation that fully leverages perspective 
+            3D geometric information. Our PerlDiff employs 3D geometric priors to guide the generation 
+            of street view images with precise object-level control within the network learning process, 
+            resulting in a more robust and controllable output.  Moreover, it demonstrates superior 
+            controllability compared to alternative layout control methods. Empirical results justify 
+            that our PerlDiff markedly enhances the precision of generation on the NuScenes and KITTI datasets. 
+          </p>  
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
+    <!-- Paper framework. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h2 class="title is-3">PerlDiff</h2>
+        <div class="publication-pdf">
+          <object data="static/images/PerlDiff_overview.pdf" type="application/pdf" width="100%" height="600px">
+            <p>Overview of \textbf{PerlDiff} framework for multi-view street image generation. our PerlDiff utilizes perspective layout masking maps derived from BEV annotations to integrate scene information and object bounding boxes. \textbf{Perl-CM} is responsible for integrating control information through employing \textbf{Perl-based cross-attention (Scene \& Object)} mechanism, using Perl masking map (road \& box) as geometric priors to guide object-level image generation with high precision. View cross-attention ensures consistency across multiple views, while Text cross-attention integrates textual scene descriptions to facilitate further adjustments.</p>
+          </object>
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
+    <!--/ Paper PDF. -->
+
   </div>
 </section>
 
