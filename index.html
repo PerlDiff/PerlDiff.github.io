@@ -290,15 +290,11 @@
             on the integration of diverse generative information into controlling inputs, utilizing 
             frameworks such as GLIGEN or ControlNet, to produce commendable outcomes in controllable 
             generation. 
-          </p> 
-          <p>
             However, such approaches intrinsically restrict generation performance to the learning 
             capacities of predefined network architectures. In this paper, we explore the integration 
             of controlling information and introduce PerlDiff (Perspective-Layout Diffusion Models), 
             a method for effective street view image generation that fully leverages perspective 
-            3D geometric information.
-            </p> 
-           <p>            
+            3D geometric information.         
             Our PerlDiff employs 3D geometric priors to guide the generation 
             of street view images with precise object-level control within the network learning process, 
             resulting in a more robust and controllable output.  Moreover, it demonstrates superior 
@@ -335,48 +331,47 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+      <!-- Visualization. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">orientation and size</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            From top to bottom, the orientation of the object increases 
+            incrementally (-60 °, 60 °, and 90 °), and from left to right, we 
+            display objects of different sizes (car, truck, and bus).
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="columns is-centered has-text-centered">
+          <img src="./static/images/size.png" alt="size control" width=50%" loading="lazy">
+        </div>
         </div>
       </div>
       <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
+      <!-- Position. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Position</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              From left to right, the objects progressively move forward, and from top to 
+              bottom, we display objects of varying sizes (car, truck, and bus)..
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
+        <div class="columns is-centered has-text-centered">
+          <img src="./static/images/pos.png" alt="pos control" width="50%" loading="lazy">
+        </div>
           </div>
 
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
+    <!--/ Position. -->
 
-    <!-- Animation. -->
+    <!-- Attention Visualization. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Attention Visualization</h2>
 
-        <!-- Interpolating. -->
+        <!-- Attention Visualization. -->
         <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
