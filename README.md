@@ -1,14 +1,14 @@
 # Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [PerlDiff website](https://perldiff.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find PerlDiff useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{zhang2024perldiff,
+  title={PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models},
+  author={Zhang, Jinhua and Sheng, Hualian and Cai, Sijia and Deng, Bing and Liang, Qiao and Li, Wen and Fu, Ying and Ye, Jieping and Gu, Shuhang},
+  journal={arXiv preprint arXiv:2407.06109},
+  year={2024}
 }
 ```
 
