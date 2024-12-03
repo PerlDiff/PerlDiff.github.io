@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models">
+        content="PerLDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models">
   <meta name="keywords" content="autonomous-driving, diffusion model">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models</title>
+  <title>PerLDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -67,7 +67,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PerlDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models</h1>
+          <h1 class="title is-1 publication-title">PerLDiff: Controllable Street View Synthesis Using Perspective-Layout Diffusion Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://nuanbaobao.github.io/">Jinhua Zhang</a><sup>1</sup>,
@@ -140,10 +140,10 @@
     <div class="hero-body">
 
     <div class="columns is-centered has-text-centered">
-      <img src="./static/images/intro.png" alt="PerlDiff enhances controllability over BEVControl* using geometric priors.f" width="90%" loading="lazy">
+      <img src="./static/images/intro_2.png" alt="PerLDiff enhances controllability over BEVControl* and MagicDrive using geometric priors.f" width="90%" loading="lazy">
     </div>
      <h2 class="subtitle has-text-centered">
-       PerlDiff enhances controllability (orientation, position and size) over BEVControl* using geometric priors.
+       PerLDiff enhances controllability over BEVControl* and MagicDrive using geometric priors.
       </h2>
     </div>
   </div>
@@ -157,22 +157,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Controllable generation is considered a potentially vital approach to address the challenge
-            of annotating 3D data, and the precision of such controllable generation becomes particularly 
-            imperative in the context of data production for autonomous driving. Existing methods focus 
-            on the integration of diverse generative information into controlling inputs, utilizing 
-            frameworks such as GLIGEN or ControlNet, to produce commendable outcomes in controllable 
-            generation. 
-            However, such approaches intrinsically restrict generation performance to the learning 
-            capacities of predefined network architectures. In this paper, we explore the integration 
-            of controlling information and introduce PerlDiff (Perspective-Layout Diffusion Models), 
-            a method for effective street view image generation that fully leverages perspective 
-            3D geometric information.         
-            PerlDiff employs 3D geometric priors to guide the generation 
-            of street view images with precise object-level control within the network learning process, 
-            resulting in a more robust and controllable output.  Moreover, it demonstrates superior 
-            controllability compared to alternative layout control methods. Empirical results justify 
-            that PerlDiff markedly enhances the precision of generation on the NuScenes and KITTI datasets.  
+          Controllable generation is considered a potentially vital approach to address the challenge of annotating 3D data, and the precision of 
+          such controllable generation becomes particularly imperative in the context of data production for autonomous driving. Existing methods focus 
+          on the integration of diverse generative information into controlling inputs, utilizing frameworks such as GLIGEN or ControlNet, to produce 
+          commendable outcomes in controllable generation. However, such approaches intrinsically restrict generation performance to the learning 
+          capacities of predefined network architectures. In this paper, we explore the integration of controlling information and introduce 
+            PerLDiff (\textbf{Per}spective-\textbf{L}ayout \textbf{Diff}usion Models), a method for effective street view image generation that fully 
+            leverages perspective 3D geometric information. Our PerLDiff employs 3D geometric priors to guide the generation of street view images with 
+            precise object-level control within the network learning process, resulting in a more robust and controllable output. Moreover, it demonstrates 
+            superior controllability compared to alternative layout control methods. Empirical results justify that our PerLDiff markedly enhances the 
+            precision of generation on the NuScenes and KITTI datasets.
           </p>  
         </div>
       </div>
@@ -183,11 +177,11 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
     <div class="columns is-centered has-text-centered">
-      <img src="./static/images/perldiff.png" alt="Algorithm description of
+      <img src="./static/images/perldiff_2.png" alt="Algorithm description of
       PerlDiff" width="90%" loading="lazy">
     </div>
      <h2 class="subtitle has-text-centered">
-      PerlDiff utilizes perspective layout masking maps derived from BEV annotations to integrate 
+      PerLDiff utilizes perspective layout masking maps derived from 3D annotations to integrate 
        scene information and object bounding boxes for multi view street scene generation. 
       </h2>
     </div>
@@ -204,32 +198,29 @@
       <div class="column is-full">
         <h2 class="title is-3">Visualization of Controllability</h2>
 
-        <!-- Orientation and Size. -->
-        <h3 class="title is-4">Orientation & Size</h3>
+        <!-- Scene Controllability. -->
+        <h3 class="title is-4">Scene Controllability</h3>
         <div class="content has-text-justified">
           <p>
-            From top to bottom, the orientation of the object increases 
-            incrementally (-60°, 60°, and 90°), and from left to right, we 
-            display objects of different sizes (car, truck, and bus).
+            PerLDiff demonstrates superior performance by generating images consistent with ground truth road information.
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column has-text-centered">
-            <img src="./static/images/size.png" alt="size control" style="width: 90%;" loading="lazy">
+            <img src="./static/images/scene.png" alt="scene control" style="width: 90%;" loading="lazy">
           </div>
         </div>
 
-        <!-- Position. -->
-        <h3 class="title is-4">Position</h3>
+        <!-- Object Controllability. -->
+        <h3 class="title is-4">Object Controllability</h3>
         <div class="content has-text-justified">
           <p>
-            From left to right, the objects move forward, and from top to 
-            bottom, displaying objects of varying sizes (car, truck, and bus).
+            PerLDiff exhibits superior performance by generating objects at arbitrary angles.
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column has-text-centered">
-            <img src="./static/images/pos.png" alt="pos control" style="width: 90%;" loading="lazy">
+            <img src="./static/images/object.png" alt="object control" style="width: 90%;" loading="lazy">
           </div>
         </div>
 
@@ -243,7 +234,7 @@
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column has-text-centered">
-            <img src="./static/images/text.png" alt="lighting and weather control" style="width: 90%;" loading="lazy">
+            <img src="./static/images/text_2.png" alt="lighting and weather control" style="width: 90%;" loading="lazy">
           </div>
         </div>
         
@@ -343,7 +334,7 @@
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column has-text-centered">
-            <img src="./static/images/aug.png" alt="data aug" style="width: 90%;" loading="lazy">
+            <img src="./static/images/aug_2.png" alt="data aug" style="width: 90%;" loading="lazy">
           </div>
         </div>
       </div>
